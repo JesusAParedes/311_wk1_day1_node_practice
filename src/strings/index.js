@@ -5,12 +5,12 @@ const split = (str, delim) => {
 
 const pairs = (str) => {
   // write code for strings.pairs
-  // let pairs = [];
-  // for(i=0; i<str.length; str+2) {
-  //   let pair = str.split();
-  //   pairs.push(pair);
-  // }
-  // return pairs;
+  let pairs = [];
+  for(i=0; i<str.length; i+=2) {
+    let pair = str.substring(i, i+2);
+    pairs.push(pair);
+  }
+  return pairs;
 }
 
 const reverse = (str) => {
